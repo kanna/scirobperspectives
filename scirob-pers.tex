@@ -101,7 +101,8 @@ class in of themselves. As tethered vehicles, they've been immensely
 successful in exploration where \emph{manipulation} rather than
 measurement is at the core; this is particularly in the context of
 benthic exploration including those involving marine science
-\cite{yoerger00,robi17} and archeology \cite{coleman00}.
+\cite{yoerger00,robi17} and archeology \cite{coleman00}. ROVs however
+are not autonomous and not the focus of this paper.
 
 More recently, robotic vehicles have been augmenting traditional
 ship-based observations, in the aerial, surface and underwater
@@ -136,9 +137,61 @@ payloads suitable both in mass and energy requirements for carrying on
 such ship-launched platforms for over water observations have been
 sparse compared to the rapid innovation in sensors for terrestrial
 drones. This too however, is changing with low cost DMS sensors (to
-measure biological productivity) (\kc{cie}) and imagers including
-hyper-spectral \cite{sigernes18} and infra-red sensors now available
-for integration.
+measure outgassing of biological productivity) (\kc{cite}) and imagers
+including hyper-spectral \cite{sigernes18} and infra-red sensors now
+available for integration.
+
+While substantial progress has been made in bringing each class of
+these assets to aid and augment ocean observation, some more
+effectively than others, less has been done to make effective use of
+these vehicles in a sustainable and cohesive manner to actually make a
+significant leap in ocean observation. To do so, we believe that in
+adopting the following XX ways, we can significantly advance not just
+the science of ocean observation, but also a systematically engineered
+approach to marine robotics. 
+
+First, the adoption of \emph{networked} robotics is critical to
+increasing the sensing footprint of a research vessel. Making discrete
+measurements of macro-phenomenon (e.g. blooms, anoxic zones, plumes of
+any kind, fronts) across space and time, requires un-aliased sensing
+which requires the presence of multiple sensory elements across a
+large (typically on meso-scale $\sim 50$ Km\textsuperscript{2})
+spatial extant. While eulerian or lagrangian sensors are possible,
+practicality requirements in the open (or even coastal) ocean imply
+the use of mobile robotic assets. For their placement and control,
+networked methods to communicate and control are critical for
+subsequent data assimilation and analysis.
+
+Second, even if multiple robotic platforms (mobile or immobile) are
+available and placed in an 'appropriate' location for making the
+necessary measurements, if they do not \emph{adapt}, then a large
+portion of the signal being tracked is likely to be missed or poorly
+resolved, spatio-temporally (\kc{cite}).
+
+Third, to look at phenomenon at scale, both high-resolution spatially
+coherent data as also fine-scale temporal resolution is needed
+(\kc{cite}) to separate bio-geophysical interactions, for instance in
+wind-driven upwelling. \emph{Synoptic} views are therefore important
+in resolving the scales of the processes in question, so both the
+macro- perspective, provided by remote sensing and the micro view
+provided by in-situ assets making continuous measurements are required
+to be fused together.
+
+Finally, a mix of predictive and reactive approaches are required to
+be able to determine the central problem in oceanographic sampling,
+i.e. ``where and when to sample''. Ocean models driven by remote
+sensing and highly non-linear computation can provide hindcasts,
+nowcasts and forecasts. These can be valuable in event-response
+situations such as oil spills and other forms of coastal marine
+pollution or natural forcings that can cause blooms, for
+instance. However model skill in making predictions with sufficient
+levels of confidence continues to dodge coastal, sub-mesoscale and
+near-shore waters. Coupling models with assimilated sensor
+measurements however, provide a way out to increasing model skill and
+making predictions, especially in dynamic mixed waters in the coastal
+environment.
+
+
 
 
 \begin{enumerate} 
