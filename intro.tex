@@ -33,15 +33,13 @@ are restricted to the vessels movement and have no independant means
 to adapt to variability in the water-column. Eulerian and Lagrangian
 approaches to observations such as buoys and \texttt{ARGO} floats
 \cite{roemmich09} can make accurate assessments with temporal
-variability and space and time respectively, but are constrained by
-what water mass passes by. Driven by the Oil and Gas industry,
-remotely operated vehicles (ROVs) are in a different class in of
-themselves. As tethered vehicles, they've been immensely successful in
-exploration where \emph{manipulation} rather than measurement is at
-the core; this is particularly in the context of benthic exploration
-including those involving marine science \cite{yoerger00,robi17} and
-archeology \cite{coleman00}. ROVs however are not autonomous and not
-the focus of this paper.
+variability and space and time, but are constrained by what water mass
+passes by. Driven by the Oil and Gas industry, remotely operated
+vehicles (ROVs) are tethered vehicles have been successful where
+\emph{manipulation} rather than measurement is at the core; this is
+particularly in the context of benthic exploration including those
+involving marine science \cite{yoerger00,robi17} and archeology
+\cite{coleman00}. ROVs however are not autonomous.
 
 
 % As soon as you get to anything more sophisticated, the costs go up so
@@ -58,13 +56,13 @@ the focus of this paper.
 % going to change our understanding of the ocean.
 
 
-Traditional methods in ocean science involved taking measurements
+Traditional methods in ocean science involved making measurements
 every few hundred miles to describe how we think the ocean works while
 neglecting all higher frequencies of variability as noise.  As our
 knowledge has progressed and we have learned over the last few decades
 that the more we look, more important the smaller scale features are
 and that they don't linearly scale to add to the large patterns we
-used to describe the oceans. A great challenge therefore, has been to
+use to describe the oceans. A great challenge therefore, has been to
 understanding how oceans and the life in them work and how this is
 changing, what the oceans might look like in the future, and this
 challenge is one of sampling.  The current approach to increasing
@@ -104,73 +102,94 @@ payloads suitable both in mass and energy requirements for carrying on
 such ship-launched platforms for over water observations have been
 sparse compared to the rapid innovation in sensors for terrestrial
 drones. This too however, is changing with low cost DMS sensors (to
-measure outgassing of biological productivity) (\kc{cite}) and imagers
-including hyper-spectral \cite{sigernes18} and infra-red sensors now
-available for integration.
+measure outgassing of biological productivity) (\cite{pinto21}) and
+imagers including hyper-spectral \cite{sigernes18} and infra-red
+sensors now available for integration.
 
 While substantial progress has been made in bringing each class of
 these assets to aid and augment ocean observation, some more
 effectively than others, less has been done to make effective use of
 these vehicles in a sustainable and cohesive manner to actually make a
-significant leap in ocean observation. To do so, we believe that in
-adopting the following \textbf{four} ways, we can significantly
-advance not just the science of ocean observation, but also a
-systematically engineered approach to marine robotics.
+significant leap in ocean observation. To do so, we believe that the
+adoption of the following \textbf{four} ways are needed to
+significantly advance not just the science of ocean observation, but
+also a systematically engineered and scalable approach to marine
+robotics.
 
 First, the adoption of \emph{networked} robotics is critical to
-increasing the sensing footprint of a research vessel. Making discrete
-measurements of macro-phenomenon (e.g. blooms, anoxic zones, plumes of
-any kind, fronts) across space and time, requires un-aliased sensing
-which requires the presence of multiple sensory elements across a
-large (typically on meso-scale $\sim 50$ Km\textsuperscript{2})
-spatial extant. While eulerian or lagrangian sensors are possible,
-practicality requirements in the open (or even coastal) ocean imply
-the use of mobile robotic assets. For their placement and control,
-networked methods to communicate and control are critical for
-subsequent data assimilation and analysis.
+increasing the sensing footprint of a research vessel
+\cite{lima21}. Making discrete measurements of macro-phenomenon
+(e.g. blooms, anoxic zones, plumes of any kind, fronts) across space
+and time, requires un-aliased sensing which requires the presence of
+multiple sensory elements across a large (typically meso-scale
+$\sim 50$ Km\textsuperscript{2}) spatial extant. While eulerian or
+lagrangian sensors are possible, practical requirements in the open
+(or even coastal) ocean imply the use of mobile robotic assets. For
+their placement and control, networked methods to communicate and
+control are critical for subsequent data assimilation and analysis.
 
-Second, even if multiple robotic platforms (mobile or immobile) are
-available and placed in an 'appropriate' location for making the
-necessary measurements, if they do not \emph{adapt}, then a large
-portion of the signal being tracked is likely to be missed or poorly
-resolved, spatio-temporally (\kc{cite}).
+Second, to look at phenomena at scale, high-resolution spatially
+coherent data needs to be obtained \emph{with} fine-scale temporal
+resolution (\kc{cite}) to separate bio-geophysical interactions, for
+instance in wind-driven upwelling (\kc{cite}). \emph{Synoptic} views
+are therefore important in resolving the scales of the processes in
+question, so both the macro- perspective, provided by remote sensing
+and the micro view provided by in-situ assets making continuous
+measurements are can be fused together.
 
-Third, to look at phenomenon at scale, both high-resolution spatially
-coherent data as also fine-scale temporal resolution is needed
-(\kc{cite}) to separate bio-geophysical interactions, for instance in
-wind-driven upwelling. \emph{Synoptic} views are therefore important
-in resolving the scales of the processes in question, so both the
-macro- perspective, provided by remote sensing and the micro view
-provided by in-situ assets making continuous measurements are required
-to be fused together.
-
-Finally, a mix of predictive and reactive approaches are required to
-be able to determine the central problem in oceanographic sampling,
-i.e. ``where and when to sample''. And to do understand the
-spatio-temporal aspects of this living mass in 4D to to zoom in and
-out and map in and out large or smaller volumes and to look at micro
-to macro structure. Ocean models driven by remote sensing and highly
-non-linear computation can provide hindcasts, nowcasts and
-forecasts. These can be valuable in event-response situations such as
-oil spills and other forms of coastal marine pollution or natural
-forcings that can cause blooms, for instance. However model skill in
-making predictions with sufficient levels of confidence continues to
-dodge coastal, sub-mesoscale and near-shore waters. Coupling models
-with assimilated sensor measurements however, provide a way out to
-increasing model skill and making predictions, especially in dynamic
+Third, even if multiple robotic platforms are available and placed in
+the 'right' place and 'right' time for making the necessary
+measurements, if they do not \emph{adapt}, then a large portion of the
+signal being tracked is likely to be missed or poorly resolved,
+spatio-temporally (\kc{cite}). To do so, ocean models perform a
+valuable service in assimilating data from sensors (including remotely
+sensed) to offer predictions of state within the water-column in space
+and time. Their non-linear computation can provide hindcasts, nowcasts
+and forecasts which can be valuable in event-response situations such
+as oil spills and other forms of coastal marine pollution or natural
+forcing (e.g. harmful blooms or sewage outflow from urban
+environments) using ocean physics to determine a plausible 'future'
+in-situ environment. Further, models can provide error bounds on what
+they know, based on the provenance of data (in-situ or remotely
+sensed) and what they do not. So they can provide guidance to help
+place robots at the 'right' place and time to resolve such regions of
+high uncertainty with in-situ measurements.  Since model skill with
+sufficient levels of confidence continues to be poor especially for
+the complex coastal, sub-mesoscale and near-shore waters, coupling
+models with assimilated sensor measurements can provide a way out to
+increasing skill and making better predictions, especially in dynamic
 mixed waters in the coastal environment.
 
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{fig/inverse-pyramid.jpg}
+  \caption{Using multi-domain platforms from space, aerial, surface
+    and underwater vehicles to observe a patch of the coastal ocean.}
+  \label{fig:inverse}
+\end{figure}
+
+Finally, for adaptation to occur in single robots or as an ensemble,
+the control algorithms for these robots need to be both goal driven
+and reactive so as to deal with the dynamism and the unpredictability
+of sampling the upper water column. Goal driven behavior ensures there
+is consistent long-term strategy that a robot follows (e.g. surveying
+a volume of water) while reactive behavior ensures opportunism and and
+unanticipated 'interestingness' can be measured. Put together, instead
+of simple deterministic script based behavior, such an adaptation
+allows a robotic explorer to make measurements which are not just the
+'known unknowns' but also the 'unknown unknowns'.
+
 To cover these approaches, we need an ensemble of robotic vehicles
-with different sensors to be able to characterize different processes
+with different sensors to be able to characterize a range of processes
 at different scales and varying levels of synopticity. And to have
-them coherently looking at one patch of the ocean over space, aerial,
-surface and underwater domains and to be able to integrate
-these measurements to provide a cogent ``MRI'' scan of the upper
-water-column. And to do so, with as much automation in hardware and
+them coherently \emph{looking at one patch of the ocean} over space,
+aerial, surface and underwater domains and to be able to integrate
+these measurements to provide a cogent ``MRI''-like scan of the upper
+water-column . And to do so, with as much automation in hardware and
 platforms, as well as in software data synthesis, analysis and
 decision making in an interdisciplinary manner merging ocean science,
 robotics and Artificial Intelligence (AI) including Machine Learning
-(ML). 
+(ML).
 
 
 \begin{enumerate} 
