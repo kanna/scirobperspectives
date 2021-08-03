@@ -87,20 +87,20 @@ all the way to the micro-organisms that inhabit those features.
 Each platform brings a range of capabilities, from observing at very
 large spatial scales via space remote sensing, to making fine scale
 measurements in the water column at far slower speeds with AUVs
-in-situ. Coordination of these platforms is not necessary about
-managing swarming or optimal control behaviors, but more about
-ensuring that measurements can be made at approximately the
-region/area/volume in as adaptive way as necessary. The expense of
-operating such platforms can then work in a dynamic that allows for a
-gradated response which use (space or aerial) remote sensing to spot a
-feature of interest, which then result in an 'event response'
-situation, which can bring to bear less expensive in-situ assets like
-ASVs and AUVs. Aerial platforms can then be used to scour a larger
-surface area and direct the deployment of slower moving ASVs and AUVs
-in targeted areas. These platforms in turn, can then use onboard
-adaptive control to further refine their observations to generate the
-necessary fine-scale measurements that science requires at
-high-resolution.
+in-situ. Coordination of these platforms is not necessarily about
+managing swarming \cite{osterloh12,lodovisi18,zereik18} or optimal
+control behaviors \cite{eichhorn15}, but more about ensuring that
+measurements can be made at approximately the region/area/volume in as
+adaptive way as necessary. The expense of operating such platforms can
+then work in a dynamic that allows for a gradated response which use
+(space or aerial) remote sensing to spot a feature of interest, which
+then result in an 'event response' situation, which can bring to bear
+less expensive in-situ assets like ASVs and AUVs. Aerial platforms can
+then be used to scour a larger surface area and direct the deployment
+of slower moving ASVs and AUVs in targeted areas. These platforms in
+turn, can then use onboard adaptive control to further refine their
+observations to generate the necessary fine-scale measurements that
+science requires at high-resolution.
 
 The case for \smle 's is equally persuasive. They not only enable
 rapid design with miniaturization at affordable cost, while retaining
@@ -150,6 +150,23 @@ decision-making \cite{ryan10,fossum18,fossum18b}, curiosity driven
 exploration \cite{girdhar14}, statistical pattern matching and machine
 learning of models of spatial and temporal variability of
 environmental variables \cite{fossum19b}.
+
+We consider ``Artificial Intelligence'' to be the broader field, not
+to be confused with what is clearly Machine Learning (ML), the latter
+related to understanding patterns in acquired data and fitting it to
+what a robotic vehicle is observing in-situ; we will therefore
+separate out the implications of AI and ML. In \proe, we will use
+methods in automated decision-making and autonomous control to
+intelligently sample in space and time \cite{graham12}. Typical
+methods in sampling deal with static sensors making measurements in
+static fields (such as ponds) or static sensors in dynamic fields
+(such as buoys in the coastal ocean). To enable mobile (or dynamic)
+sensors on robotic platforms measuring dynamic fields requires
+intelligent control driven by Sampling algorithms. For instance,
+measuring sub-surface chlorophyl max (SCM's) which feed a surface
+bloom and characterizing it over space and time, requires algorithmic
+methods such as kriging \cite{fossum18}. 
+
 
 
 
