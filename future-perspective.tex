@@ -165,8 +165,33 @@ sensors on robotic platforms measuring dynamic fields requires
 intelligent control driven by Sampling algorithms. For instance,
 measuring sub-surface chlorophyl max (SCM's) which feed a surface
 bloom and characterizing it over space and time, requires algorithmic
-methods such as kriging \cite{fossum18}. 
+methods such as Gaussian Processes \cite{fossum18}. This method
+applies well in multi-variate fields, where spatially relevant data
+with an \emph{apriori} estimation are available, and estimates
+internal to this field are needed to be filled. Such a statistical
+measure of estimation is well suited to a mobile robot that can use
+estimates from, say, remote sensing to close the uncertainty gap
+within a dynamic field, such as a bloom, need to be sampled. To do so
+then, the robot needs to be guided reactively, within regions of
+statistical uncertainty to update the 'known unknowns', something an
+AI-based decision-making system can do. In so doing, the
+decision-making 'AI' keeps the larger context of a complex goal,
+e.g. surveying a volume of water, while greedily evaluating and
+constructing the distribution of one or more variables in order to
+construct the dynamically varying field. An important assumption of
+stationarity is the dynamism of the field itself; typically in the
+upper water column coastal or open oligotrophic ocean, the field
+varies slowly (< 5 m/sec) and the applicability of such methods has
+proven to be viable. The AI, therefore is to balance the needs of the
+\emph{deliberative} or longer term goals of a robot, with its more
+\emph{reactive} responses. In \proe, such a system will be fielded
+embedded on a robot to make such trades to demonstrate
+'intelligence' \cite{fossum18,fossum18b}.
 
+Given the spatial and temporal spread of upper water column processes
+from sub-centimeter scales to tens of kms (Fig. \ref{fig:platforms2}),
+methods to capture the dynamics of a biological fields need to rely on
+a mix of algorithmic approaches.
 
 
 
